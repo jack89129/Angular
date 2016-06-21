@@ -1,0 +1,51 @@
+<div class="modal-header">
+	<span class="close-icon large-white pull-right cursor-pointer" ng-click="cancel()" title="Close"></span>
+	<h4 class="modal-title">FramerJS Friends (40)</h4>
+</div>
+<div class="modal-body">
+	<form class="edit-friends-form">
+		<div class="dropdown-wrapper">
+			<div class="dropdown-custom white searchByIndustry" ng-class="{'open': isSearchDropdownOpened}">
+				<div class="title" ng-click="toggleSearchDropdown()">Search by industry</div>
+				<div class="content">
+					<div class="industry-list" ng-click="toggleSearchDropdown(false)" ng-nicescroll nice-option="{zindex: 999, autohidemode: true, cursorcolor: '#595959', cursorwidth: '7px', cursorborder: 'none', cursorborderradius: '7px'}">
+						<div class="item">All</div>
+						<div class="item">Science</div>
+						<div class="item filtered">Technology</div>
+						<div class="item">Internet</div>
+						<div class="item">Science</div>
+						<div class="item filtered">Technology</div>
+						<div class="item">Internet</div>
+						<div class="item">Science</div>
+						<div class="item ">Technology</div>
+						<div class="item">Internet</div>
+						<div class="item">Science</div>
+						<div class="item ">Technology</div>
+						<div class="item">Internet</div>
+					</div>
+					<div class="button-area clearfix">
+						<a>Reset Filter</a>
+						<a>Apply Filter</a>
+					</div>
+				</div>							
+			</div>
+		</div>
+		<div class="friend-list-wrapper" ng-nicescroll nice-option="{zindex: 999, autohidemode: true, cursorcolor: '#595959', cursorwidth: '7px', cursorborder: 'none', cursorborderradius: '7px'}">
+			<ul class="friend-list">
+				<li>
+					<div class="company-info">
+						<img src="" class="company-logo">
+						<div class="company-data">
+							<h3 class="company-name">Facebook</h3>
+							<span class="company-role">Internet Technologies</span>
+						</div>
+					</div>
+					<div class="pull-right actions">
+						<a class="btn btn-success btn-sm go-to-conv">Go to conversation</a>
+						<a type="button" class="close-icon thin-white" title="Close"></a>
+					</div>
+				</li>				
+			</ul>
+		</div>
+	</form>
+</div>
